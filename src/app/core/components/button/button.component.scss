@@ -1,0 +1,102 @@
+@import "../../../ui/styles/colors";
+
+button {
+  font-weight: 600;
+  text-transform: uppercase;
+  border-radius: 0.25rem;
+  border: none;
+  outline: none;
+  cursor: pointer;
+
+  &:hover {
+    box-shadow: 0 0 0 2px $color-secondary;
+  }
+
+  &:focus {
+    box-shadow: 0 0 0 2px $color-tertiary;
+  }
+}
+
+.size {
+  &_sm {
+    padding: 0.25rem 0.875rem;
+    font-size: 0.75rem;
+  }
+
+  &_lg {
+    padding: 1rem 3rem;
+    font-size: 1rem;
+  }
+
+  &_block {
+    width: 100%;
+    padding: 0.5rem;
+    font-size: 1.75rem;
+  }
+}
+
+.color {
+  &_primary {
+    color: $color-primary;
+  }
+
+  &_secondary {
+    color: $color-secondary;
+  }
+
+  &_tertiary {
+    color: $color-tertiary;
+  }
+
+  &_dark {
+    color: $color-dark;
+  }
+}
+
+.type {
+  &_solid {
+    color: $color-dark;
+
+    &.color_dark {
+      background: $color-dark;
+      color: $color-primary;
+      border: 1px solid $color-shadow;
+    }
+
+    &.color_primary {
+      background: $color-primary;
+    }
+
+    &.color_secondary {
+      background: $color-secondary;
+    }
+
+    &.color_tertiary {
+      background: $color-tertiary;
+    }
+  }
+
+  &_outline {
+    background: transparent;
+
+    &.color_dark {
+      color: $color-primary;
+      border: 1px solid $color-primary;
+    }
+
+    &.color_primary {
+      color: $color-primary;
+      border: 1px solid $color-primary;
+    }
+
+    &.color_secondary {
+      color: $color-secondary;
+      border: 1px solid $color-secondary;
+    }
+
+    &.color_tertiary {
+      color: $color-tertiary;
+      border: 1px solid $color-tertiary;
+    }
+  }
+}
