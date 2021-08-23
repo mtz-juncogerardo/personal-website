@@ -26,6 +26,9 @@
     }
 
     &_image {
+      background-image: url('../../../../assets/images/littlecato.jpg');
+      background-size: contain;
+      background-position: center;
       height: 10rem;
       width: 10rem;
       border-radius: 50%;
@@ -44,6 +47,8 @@
     }
 
     &_github, &_mail {
+      display: grid;
+      place-items: center;
       margin: 0 0.5rem;
       height: 3rem;
       width: 10rem;

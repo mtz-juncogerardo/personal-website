@@ -1,1 +1,4 @@
-<button [class]="buttonStyle">{{ btnText }}</button>
+<button [class]="buttonStyle">
+  <i *ngIf="faIcon" [class]="faIcon"></i>
+  {{ btnText }}
+</button>

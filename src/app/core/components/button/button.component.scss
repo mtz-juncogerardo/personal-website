@@ -1,12 +1,18 @@
-@import "../../../ui/styles/colors";
+@import "src/app/ui/styles/colors";
+@import "src/app/ui/styles/layout";
 
 button {
+  @include flex(row, space-between, center);
   font-weight: 600;
   text-transform: uppercase;
   border-radius: 0.25rem;
   border: none;
   outline: none;
   cursor: pointer;
+
+  i {
+    margin-right: 0.875rem;
+  }
 
   &:hover {
     box-shadow: 0 0 0 2px $color-secondary;
@@ -26,6 +32,11 @@ button {
   &_lg {
     padding: 1rem 3rem;
     font-size: 1rem;
+  }
+
+  &_md {
+    padding: 0.5rem 2rem;
+    font-size: 0.875rem;
   }
 
   &_block {
