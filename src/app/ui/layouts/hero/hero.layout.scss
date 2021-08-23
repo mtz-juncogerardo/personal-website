@@ -2,6 +2,11 @@
 @import "src/app/ui/styles/spaces";
 @import "src/app/ui/styles/colors";
 
+#hero {
+  background-image: url('../../../../assets/backgrounds/hero.svg');
+  background-size: cover;
+}
+
 .content,
 .navbar,
 .content_title,
@@ -13,14 +18,21 @@
 }
 
 .navbar {
-  margin-bottom: $space-large;
   background: $color-shadow;
+  margin-bottom: $space-small;
+  position: fixed;
+  width: 100vw;
+  z-index: 1;
+  @include for-size(md) {
+    margin-bottom: 0;
+  }
 }
 
 .content {
-  padding: $space-x-small;
+  padding: $space-small 0;
+  margin-top: $space-large;
   @include for-size(md) {
-    padding: $space-large;
+    padding: $space-extra-large 0;
   }
 
   &_title {

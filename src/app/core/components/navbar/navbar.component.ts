@@ -1,6 +1,6 @@
 import {Component, OnDestroy, OnInit} from '@angular/core';
-import {IkeyValue} from "../../interfaces/IkeyValue";
-import {LanguageService} from "../../../libs/services/language.service";
+import {IkeyValue} from "../../../libs/interfaces/IkeyValue";
+import {LanguageService} from "../../services/language.service";
 import {Subscription} from "rxjs";
 
 @Component({
@@ -21,19 +21,19 @@ export class NavbarComponent implements OnInit, OnDestroy   {
   get spanishMenuItems(): IkeyValue[] {
     return [
       {
-        key: 'home',
+        key: '#home',
         value: 'Inicio'
       },
       {
-        key: 'about',
+        key: '#about',
         value: 'Conóceme'
       },
       {
-        key: 'projects',
+        key: '#projects',
         value: 'Mis Proyectos'
       },
       {
-        key: 'contact',
+        key: '#contact',
         value: 'Platiquemos!'
       }
     ];
@@ -42,19 +42,19 @@ export class NavbarComponent implements OnInit, OnDestroy   {
   get englishMenuItems(): IkeyValue[] {
     return [
       {
-        key: 'home',
+        key: '#home',
         value: 'Home'
       },
       {
-        key: 'about',
+        key: '#about',
         value: 'About Me'
       },
       {
-        key: 'projects',
+        key: '#projects',
         value: 'My Projects'
       },
       {
-        key: 'contact',
+        key: '#contact',
         value: 'Let\'s talk!'
       }
     ];

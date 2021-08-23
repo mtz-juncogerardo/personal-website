@@ -17,7 +17,7 @@ const routes : Routes = [
   declarations: [],
   imports: [
     RouterModule.forChild(routes),
-    CommonModule
+    CommonModule,
   ]
 })
 export class PagesModule { }

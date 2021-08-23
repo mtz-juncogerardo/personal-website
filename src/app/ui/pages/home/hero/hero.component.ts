@@ -1,12 +1,12 @@
 import {Component, OnDestroy, OnInit} from '@angular/core';
 import {Subscription} from "rxjs";
-import {LanguageService} from "../../libs/services/language.service";
+import {LanguageService} from "../../../../core/services/language.service";
 
 @Component({
-  selector: 'app-home',
-  templateUrl: './home.component.html',
+  selector: 'app-hero',
+  templateUrl: './hero.component.html',
 })
-export class HomeComponent implements OnInit, OnDestroy {
+export class HeroComponent implements OnInit, OnDestroy {
 
   welcomeWords: string [];
   langSubscription: Subscription;
@@ -20,7 +20,7 @@ export class HomeComponent implements OnInit, OnDestroy {
     return [
       "Desarrollador Frontend",
       "Desarrollador Backend",
-      "Desarrollador Movil",
+      "Desarrollador Móvil",
       "Desarrollador Fullstack",
       "Programador Apasionado"
     ]

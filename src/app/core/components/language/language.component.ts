@@ -1,6 +1,6 @@
 import {Component, OnDestroy, OnInit} from '@angular/core';
-import {supportedLangs} from "../../Types/supportedLangs";
-import {LanguageService} from "../../../libs/services/language.service";
+import {supportedLangs} from "../../../libs/Types/supportedLangs";
+import {LanguageService} from "../../services/language.service";
 import {Subscription} from "rxjs";
 
 @Component({

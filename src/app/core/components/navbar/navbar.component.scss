@@ -35,6 +35,11 @@ nav {
         cursor: pointer;
         color: $color-secondary;
 
+        a {
+          text-decoration: none;
+          color: inherit;
+        }
+
         &:hover {
           color: $color-tertiary;
         }

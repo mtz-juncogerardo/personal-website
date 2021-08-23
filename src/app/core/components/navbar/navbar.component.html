@@ -5,8 +5,10 @@
   <div class="menu">
     <div class="subgrid">
       <ul class="menu_list">
-        <li *ngFor="let menuItem of menuItems" [routerLink]="'/' + menuItem.key" class="menu_list_item">
-          {{menuItem.value}}
+        <li *ngFor="let menuItem of menuItems" class="menu_list_item">
+          <a [href]="menuItem.key">
+            {{menuItem.value}}
+          </a>
         </li>
       </ul>
       <div class="menu_language">

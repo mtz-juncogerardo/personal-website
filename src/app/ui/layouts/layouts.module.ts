@@ -1,15 +1,18 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { HeroLayout } from './hero/hero.layout';
+import { AboutLayout } from './about/about.layout';
 
 
 
 @NgModule({
   declarations: [
-    HeroLayout
+    HeroLayout,
+    AboutLayout
   ],
   exports: [
-    HeroLayout
+    HeroLayout,
+    AboutLayout
   ],
   imports: [
     CommonModule
