@@ -1,0 +1,14 @@
+{
+  "Hero": {
+    "Greet": "Hola! Soy Gerardo un",
+    "Description": {
+      "Block1": "Hey! Bienvenido, soy un simple",
+      "Block2": "que ama la programación.",
+      "Block3": "Mi pasión me permite estar a la vanguardia en conocimientos de desarrollo y tecnologia."
+    },
+    "Buttons": {
+      "Primary": "Muestrame tus Proyectos",
+      "Secondary": "Quiero contactarte"
+    }
+  }
+}

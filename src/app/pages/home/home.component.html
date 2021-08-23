@@ -1,0 +1,18 @@
+<hero-layout>
+  <app-navbar id="navbar">
+    <app-language id="language"></app-language>
+  </app-navbar>
+  <h1 id="title" class="text-center">{{ 'Hero.Greet' | translate }} <br>
+    <span typingAnimation [listOfWords]="welcomeWords"></span>
+    <i class="blink-animation"><strong>|</strong></i>
+  </h1>
+  <p id="paragraph" class="text-center">{{ 'Hero.Description.Block1' | translate }}
+    <span class="hack">
+      <strong>cyborg</strong>
+    </span>
+    {{ 'Hero.Description.Block2' | translate }} <br>
+    {{ 'Hero.Description.Block3' | translate }}
+  </p>
+  <app-button id="button-primary" [btnText]="'Hero.Buttons.Primary' | translate" color="tertiary"></app-button>
+  <app-button id="button-secondary" [btnText]="'Hero.Buttons.Secondary' | translate" type="outline" color="primary"></app-button>
+</hero-layout>

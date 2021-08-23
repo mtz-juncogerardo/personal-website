@@ -1,0 +1,66 @@
+$xs: 360px;
+$sm: 440px;
+$md: 768px;
+$lg: 1280px;
+$xl: 1440px;
+
+@mixin for-size($size) {
+  @if $size == xs {
+    @media (max-width: $sm) {
+      @content;
+    }
+  } @else if $size == md {
+    @media (min-width: $md) {
+      @content;
+    }
+  } @else if $size == lg {
+    @media (min-width: $lg) {
+      @content;
+    }
+  } @else if $size == xl {
+    @media (min-width: $xl) {
+      @content;
+    }
+  }
+}
+
+@mixin flex($direction, $justify, $align) {
+  display: flex;
+  flex-direction: $direction;
+  justify-content: $justify;
+  align-items: $align;
+}
+
+.grid {
+  margin: 0 1rem;
+  @include for-size(md) {
+    margin: 0 2rem;
+  }
+  @include for-size(lg) {
+    margin: 0 5rem;
+  }
+  @include for-size(xl) {
+    margin: 0 auto;
+    max-width: 80rem;
+  }
+}
+
+.grid,
+.subgrid {
+  display: grid;
+  position: relative;
+  grid-column-gap: 6.67%;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  @include for-size(md) {
+    grid-column-gap: 2.27%;
+    grid-template-columns: repeat(12, minmax(0, 1fr));
+  }
+  @include for-size(lg) {
+    grid-column-gap: 2.19%;
+    grid-template-columns: repeat(12, minmax(0, 1fr));
+  }
+
+  &.center {
+    place-items: center;
+  }
+}

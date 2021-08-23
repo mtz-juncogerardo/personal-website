@@ -1,0 +1,28 @@
+@import "src/app/ui/styles/colors";
+@import "src/app/ui/styles/typography";
+@import "src/app/ui/styles/layout";
+
+.language {
+  @include flex(row, center, center);
+
+  p,
+  i {
+    font-size: 0.875rem;
+    color: $color-secondary;
+    font-weight: 600;
+  }
+
+  a {
+    cursor: pointer;
+    color: $color-secondary;
+    font-family: $font-tertiary;
+    font-size: $font-size-small;
+    text-decoration: none;
+    margin: 0 0.33rem;
+
+    &:hover,
+    &.active {
+      color: $color-tertiary;
+    }
+  }
+}

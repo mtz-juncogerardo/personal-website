@@ -1,0 +1,49 @@
+@import "../../../ui/styles/typography";
+@import "../../../ui/styles/colors";
+@import "../../../ui/styles/layout";
+@import "../../../ui/styles/spaces";
+
+
+nav {
+  padding: $space-x-small;
+
+  .logo {
+    grid: 1/3;
+
+    &_text {
+      font-family: $font-tertiary;
+      color: $color-tertiary;
+      font-size: $font-size-extra-large;
+    }
+  }
+
+  .menu {
+    grid-column: 3/5;
+    @include flex(row, space-between, center);
+    @include for-size(md) {
+      grid-column: 6/13;
+    }
+
+    &_list {
+      grid-column: 1/10;
+      list-style: none;
+      height: 100%;
+      @include flex(row, space-between, center);
+
+      &_item {
+        @extend .hack;
+        cursor: pointer;
+        color: $color-secondary;
+
+        &:hover {
+          color: $color-tertiary;
+        }
+      }
+    }
+
+    &_language {
+      grid-column: 11/13;
+      @include flex(row, center, center);
+    }
+  }
+}

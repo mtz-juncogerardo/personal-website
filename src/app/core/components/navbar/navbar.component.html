@@ -1,0 +1,18 @@
+<nav class="grid">
+  <div class="logo">
+    <span routerLink="/home" class="logo_text">Geras</span>
+  </div>
+  <div class="menu">
+    <div class="subgrid">
+      <ul class="menu_list">
+        <li *ngFor="let menuItem of menuItems" [routerLink]="'/' + menuItem.key" class="menu_list_item">
+          {{menuItem.value}}
+        </li>
+      </ul>
+      <div class="menu_language">
+        <ng-content select="#language"></ng-content>
+      </div>
+    </div>
+  </div>
+</nav>
+

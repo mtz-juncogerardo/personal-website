@@ -1,1 +1,17 @@
-/* You can add global styles to this file, and also import other style files */
+@import "src/app/ui/styles/colors";
+@import "src/app/ui/styles/typography";
+@import "src/app/ui/styles/layout";
+@import "src/app/ui/styles/animations";
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  overflow-x: hidden;
+  background: $color-dark;
+  font-size: 16px;
+  font-family: $font-secondary;
+}

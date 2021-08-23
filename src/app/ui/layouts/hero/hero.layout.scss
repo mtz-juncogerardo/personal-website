@@ -1,0 +1,55 @@
+@import "src/app/ui/styles/layout";
+@import "src/app/ui/styles/spaces";
+@import "src/app/ui/styles/colors";
+
+.content,
+.navbar,
+.content_title,
+.content_paragraph {
+  grid-column: 1/5;
+  @include for-size(md) {
+    grid-column: 1/13;
+  }
+}
+
+.navbar {
+  margin-bottom: $space-large;
+  background: $color-shadow;
+}
+
+.content {
+  padding: $space-x-small;
+  @include for-size(md) {
+    padding: $space-large;
+  }
+
+  &_title {
+    margin-bottom: $space-small;
+  }
+
+  &_paragraph {
+    margin-bottom: $space-large;
+  }
+
+  &_button-primary,
+  &_button-secondary {
+    grid-column: 1/5;
+  }
+
+  &_button-primary {
+    margin-bottom: $space-x-small;
+    @include for-size(md) {
+      margin-bottom: 0;
+      place-self: flex-end;
+      grid-column: 1/7;
+    }
+  }
+
+  &_button-secondary {
+    @include for-size(md) {
+      place-self: flex-start;
+      grid-column: 7/13;
+    }
+  }
+}
+

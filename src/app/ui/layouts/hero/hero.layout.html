@@ -1,0 +1,28 @@
+<section id="hero">
+    <div class="navbar">
+      <ng-content select="#navbar"></ng-content>
+    </div>
+
+  <div class="grid">
+    <div class="content">
+      <div class="subgrid">
+        <div class="content_title">
+          <ng-content select="#title"></ng-content>
+        </div>
+
+        <div class="content_paragraph">
+          <ng-content select="#paragraph"></ng-content>
+        </div>
+      </div>
+
+      <div class="subgrid center">
+        <div class="content_button-primary">
+          <ng-content select="#button-primary"></ng-content>
+        </div>
+        <div class="content_button-secondary">
+          <ng-content select="#button-secondary"></ng-content>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
