@@ -1,7 +1,59 @@
 @import "src/app/ui/styles/colors";
+@import "src/app/ui/styles/layout";
+@import "src/app/ui/styles/spaces";
 
 #about {
-  background: $color-shadow;
+  background-image: url('../../../../assets/backgrounds/about.svg');
+  background-size: cover;
   height: 100vh;
   width: 100vw;
+}
+
+.profile {
+  padding: $space-small;
+
+  &_avatar {
+    grid-column: 1/5;
+    @include flex(column, center, center);
+
+    &_image,
+    &_name,
+    &_nickname {
+      grid-column: 1/5;
+      @include for-size(md) {
+        grid-column: 1/13;
+      }
+    }
+
+    &_image {
+      height: 10rem;
+      width: 10rem;
+      border-radius: 50%;
+      margin-bottom: $space-x-small;
+    }
+  }
+
+  &_social {
+    padding: $space-small;
+    width: 100%;
+    grid-column: 1/5;
+    @include flex(column, center, center);
+    @include for-size(md) {
+      flex-direction: row;
+      grid-column: 6/13;
+    }
+
+    &_github, &_mail {
+      margin: 0 0.5rem;
+      height: 3rem;
+      width: 10rem;
+    }
+
+    &_github {
+      margin-bottom: $space-x-small;
+      @include for-size(md) {
+        margin-bottom: 0;
+      }
+    }
+  }
 }

@@ -64,3 +64,19 @@ $xl: 1440px;
     place-items: center;
   }
 }
+
+.test-content {
+  background: white;
+  &-1 {
+    background: blue;
+  }
+  &-2 {
+    background: yellow;
+  }
+  &-3 {
+    background: purple;
+  }
+  &-4 {
+    background: coral;
+  }
+}

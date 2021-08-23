@@ -1,3 +1,25 @@
 <section id="about">
-  <h1>About Funciona</h1>
+  <div class="profile">
+    <div class="grid center">
+      <div class="profile_avatar">
+          <div class="profile_avatar_image">
+            <ng-content select="#avatar-image"></ng-content>
+          </div>
+          <div class="profile_avatar_name">
+            <ng-content select="#avatar-name"></ng-content>
+          </div>
+          <div class="profile_avatar_nickname">
+            <ng-content select="#avatar-nickname"></ng-content>
+          </div>
+      </div>
+      <div class="profile_social">
+        <div class="profile_social_github">
+          <ng-content select="#button-primary"></ng-content>
+        </div>
+        <div class="profile_social_mail">
+          <ng-content select="#button-secondary"></ng-content>
+        </div>
+      </div>
+    </div>
+  </div>
 </section>
