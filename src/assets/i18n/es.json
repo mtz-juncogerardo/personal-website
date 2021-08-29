@@ -10,5 +10,10 @@
       "Primary": "Muestrame tus Proyectos",
       "Secondary": "Quiero contactarte"
     }
+  },
+  "About": {
+    "Description": "Soy un ingeniero de software con sede en México, cuento con 4 años de experiencia en la industria de software. Mi meta es desarrollar software de alta calidad usando las ultimas tecnologias. Mi pasión es aprender que hay de nuevo en el mundo del desarrollo y ver como puedo incluir nuevas herramientas en mi stack de tecnologico.",
+    "Languages": "Lenguajes de programación que domino",
+    "Technologies": "Otras tecnologias que domino"
   }
 }

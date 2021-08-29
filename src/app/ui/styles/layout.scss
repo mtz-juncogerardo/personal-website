@@ -65,6 +65,20 @@ $xl: 1440px;
   }
 }
 
+.push {
+  &-big {
+    margin: 1rem;
+  }
+
+  &-medium {
+    margin: 0.5rem;
+  }
+
+  &-small {
+    margin: 0.25rem;
+  }
+}
+
 .test-content {
   background: white;
   &-1 {

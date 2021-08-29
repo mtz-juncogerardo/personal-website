@@ -1,6 +1,7 @@
 <about-layout>
   <p id="avatar-name" class="text-center">Gerardo Martínez Junco</p>
   <p id="avatar-nickname">@geras</p>
+  <p id="description" class="text-center">{{ 'About.Description' | translate }}</p>
   <app-button id="button-primary"
               size="md"
               color="tertiary"
@@ -13,6 +14,23 @@
               color="tertiary"
               type="outline"
               faIcon="far fa-envelope"
-              btnText="mail me">
+              btnText="Email">
   </app-button>
+  <card-layout id="card1">
+      <p id="section-title-1" class="p--inherit">
+        {{'About.Languages' | translate}}
+      </p>
+      <div id="section-content-1">
+        <img class="push-medium" height="36" width="36" src="assets/images/javascript-logo.svg" title="Javascript" alt="javascript logo">
+        <img class="push-medium" height="36" width="36" src="assets/images/c-sharp-logo.svg" title="C# (C Sharp)" alt="c sharp logo">
+      </div>
+      <p id="section-title-2" class="p--inherit">
+        {{'About.Technologies' | translate}}
+      </p>
+      <div id="section-content-2">
+        <img class="push-medium" height="36" width="36" src="assets/images/angular-logo.svg" title="Angular" alt="angular logo">
+        <img class="push-medium" height="36" width="36" src="assets/images/ionic-logo.svg" title="Ionic" alt="ionic logo">
+        <img class="push-medium" height="36" width="36" src="assets/images/node-js-logo.svg" title="Node js" alt="node js logo">
+      </div>
+  </card-layout>
 </about-layout>

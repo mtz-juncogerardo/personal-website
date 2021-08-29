@@ -5,12 +5,17 @@
 #about {
   background-image: url('../../../../assets/backgrounds/about.svg');
   background-size: cover;
-  height: 100vh;
-  width: 100vw;
+
+  @include for-size(md) {
+    padding: $space-large;
+  }
 }
 
 .profile {
-  padding: $space-small;
+  padding: $space-x-small;
+  @include for-size(md) {
+    padding: $space-small;
+  }
 
   &_avatar {
     grid-column: 1/5;
@@ -36,29 +41,66 @@
     }
   }
 
-  &_social {
-    padding: $space-small;
-    width: 100%;
+  &_description {
     grid-column: 1/5;
-    @include flex(column, center, center);
     @include for-size(md) {
-      flex-direction: row;
       grid-column: 6/13;
     }
+  }
 
-    &_github, &_mail {
-      display: grid;
-      place-items: center;
-      margin: 0 0.5rem;
-      height: 3rem;
-      width: 10rem;
+  &_content {
+    grid-column: 1/5;
+    padding: $space-x-small 0;
+    @include for-size(md) {
+      grid-column: 6/13;
+      padding: $space-small;
     }
 
-    &_github {
-      margin-bottom: $space-x-small;
+    &_social,
+    &_description {
+      grid-column: 1/5;
       @include for-size(md) {
-        margin-bottom: 0;
+        grid-column: 1/13;
       }
     }
+
+    &_description {
+      margin-bottom: $space-x-small;
+    }
+
+    &_social {
+      @include flex(column, center, center);
+      @include for-size(md) {
+        flex-direction: row;
+      }
+
+      &_github, &_mail {
+        display: grid;
+        place-items: center;
+        margin: 0 0.5rem;
+        height: 3rem;
+        width: 10rem;
+      }
+    }
+  }
+}
+
+.card1,
+.card2 {
+  grid-column: 1/5;
+}
+
+.card1 {
+  margin-bottom: $space-x-small;
+
+  @include for-size(md) {
+    grid-column: 1/7;
+    margin-bottom: 0;
+  }
+}
+
+.card2 {
+  @include for-size(md) {
+    grid-column: 7/13;
   }
 }

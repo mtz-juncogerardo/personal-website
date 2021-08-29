@@ -1,23 +1,46 @@
 <section id="about">
   <div class="profile">
     <div class="grid center">
+
       <div class="profile_avatar">
         <div class="profile_avatar_image"></div>
+
         <div class="profile_avatar_name">
           <ng-content select="#avatar-name"></ng-content>
         </div>
+
         <div class="profile_avatar_nickname">
           <ng-content select="#avatar-nickname"></ng-content>
         </div>
       </div>
-      <div class="profile_social">
-        <div class="profile_social_github">
-          <ng-content select="#button-primary"></ng-content>
-        </div>
-        <div class="profile_social_mail">
-          <ng-content select="#button-secondary"></ng-content>
+
+      <div class="profile_content">
+        <div class="subgrid">
+          <div class="profile_content_description">
+            <ng-content select="#description"></ng-content>
+          </div>
+
+          <div class="profile_content_social">
+            <div class="profile_content_social_github">
+              <ng-content select="#button-primary"></ng-content>
+            </div>
+
+            <div class="profile_content_social_mail">
+              <ng-content select="#button-secondary"></ng-content>
+            </div>
+          </div>
         </div>
       </div>
+    </div>
+  </div>
+
+  <div class="grid">
+    <div class="card1">
+      <ng-content select="#card1"></ng-content>
+    </div>
+
+    <div class="card2">
+      <ng-content select="#card2"></ng-content>
     </div>
   </div>
 </section>

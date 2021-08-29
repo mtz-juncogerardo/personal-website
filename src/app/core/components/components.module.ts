@@ -11,7 +11,7 @@ import { LanguageComponent } from './language/language.component';
     CommonModule,
     RouterModule,
   ],
-  exports: [NavbarComponent, ButtonComponent, LanguageComponent]
+    exports: [NavbarComponent, ButtonComponent, LanguageComponent]
 })
 export class ComponentsModule {
 }

@@ -72,6 +72,12 @@ p {
   &.p--primary {
     color: $color-primary;
   }
+
+  &.p--inherit {
+    color: inherit;
+    font-size: inherit;
+    font-family: inherit ;
+  }
 }
 
 .hack {

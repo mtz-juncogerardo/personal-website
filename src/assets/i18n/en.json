@@ -10,5 +10,10 @@
       "Primary": "Show me your projects",
       "Secondary": "Let's get in touch"
     }
+  },
+  "About": {
+    "Description": "I'm a software engineer based in Mexico with 4 years of experience in the software industry. My goal is to develop high quality software using the latest technologies. My passion is to learn what's new in technologies and see how I can include it in my current stack.",
+    "Languages": "Programming languages I master",
+    "Technologies": "Other technologies I master"
   }
 }
