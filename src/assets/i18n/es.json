@@ -14,6 +14,29 @@
   "About": {
     "Description": "Soy un ingeniero de software con sede en México, cuento con 4 años de experiencia en la industria de software. Mi meta es desarrollar software de alta calidad usando las ultimas tecnologias. Mi pasión es aprender que hay de nuevo en el mundo del desarrollo y ver como puedo incluir nuevas herramientas en mi stack de tecnologico.",
     "Languages": "Lenguajes de programación que domino",
-    "Technologies": "Otras tecnologias que domino"
+    "Technologies": "Frameworks y Librerias que domino",
+    "Statistics": {
+      "Title": "Mis Estadisticas",
+      "Item1": "Proyectos finalizados",
+      "Item2": "IDE más usado",
+      "Item3": "Lenguaje de programación más usado",
+      "Item4": "Framework más usado"
+    },
+    "WhatIDo": {
+      "Title": "Lo que puedo hacer",
+      "Item1": "Desarrollar la aplicación de tus sueños",
+      "Item2": "Crear tu propio sitio web",
+      "Item3": "Crear la aplicación para tu startup",
+      "Item4": "Dar mantenimiento a una app tuya",
+      "Item5": "Añadir cosas nuevas a una app tuya",
+      "Item6": "Añadir cosas nuevas a tu sitio web"
+    },
+    "WhatICant": {
+      "Title": "Lo que NO hago",
+      "Item1": "Hackear facebooks",
+      "Item2": "Arreglar tu impresora",
+      "Item3": "Instalarte Windows",
+      "Item4": "Formatear tu PC"
+    }
   }
 }

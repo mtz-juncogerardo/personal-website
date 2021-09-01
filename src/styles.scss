@@ -2,8 +2,9 @@
 @import "src/app/ui/styles/typography";
 @import "src/app/ui/styles/layout";
 @import "src/app/ui/styles/animations";
+@import "src/app/ui/styles/sizes";
 
-* {
+*:not(ul) {
   margin: 0;
   padding: 0;
   box-sizing: border-box;

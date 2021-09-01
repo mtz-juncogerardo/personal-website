@@ -15,7 +15,7 @@ h1,
 h2,
 h3,
 h4,
-h5{
+h5 {
   margin: 0;
   font-weight: 400;
   line-height: 1.5;
@@ -76,7 +76,34 @@ p {
   &.p--inherit {
     color: inherit;
     font-size: inherit;
-    font-family: inherit ;
+    font-family: inherit;
+  }
+}
+
+ul {
+  &.ul--no-style {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+  }
+
+  li {
+    color: $color-secondary;
+    font-family: $font-secondary;
+    font-size: 0.875rem;
+
+    @include for-size(md) {
+      font-size: $font-size-small;
+    }
+
+    &.font-tertiary {
+      font-family: $font-tertiary;
+      font-size: $font-size-small;
+
+      @include for-size(md) {
+        font-size: $font-size-medium;
+      }
+    }
   }
 }
 

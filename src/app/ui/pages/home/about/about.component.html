@@ -17,20 +17,73 @@
               btnText="Email">
   </app-button>
   <card-layout id="card1">
-      <p id="section-title-1" class="p--inherit">
-        {{'About.Languages' | translate}}
-      </p>
-      <div id="section-content-1">
-        <img class="push-medium" height="36" width="36" src="assets/images/javascript-logo.svg" title="Javascript" alt="javascript logo">
-        <img class="push-medium" height="36" width="36" src="assets/images/c-sharp-logo.svg" title="C# (C Sharp)" alt="c sharp logo">
-      </div>
-      <p id="section-title-2" class="p--inherit">
-        {{'About.Technologies' | translate}}
-      </p>
-      <div id="section-content-2">
-        <img class="push-medium" height="36" width="36" src="assets/images/angular-logo.svg" title="Angular" alt="angular logo">
-        <img class="push-medium" height="36" width="36" src="assets/images/ionic-logo.svg" title="Ionic" alt="ionic logo">
-        <img class="push-medium" height="36" width="36" src="assets/images/node-js-logo.svg" title="Node js" alt="node js logo">
-      </div>
+    <p id="section-title-1" class="p--inherit">
+      {{'About.Languages' | translate}}
+    </p>
+    <div id="section-content-1">
+      <img class="push-medium img--small" src="assets/images/javascript-logo.svg" title="Javascript"
+           alt="javascript logo">
+      <img class="push-medium img--small" src="assets/images/c-sharp-logo.svg" title="C# (C Sharp)"
+           alt="c sharp logo">
+    </div>
+    <p id="section-title-2" class="p--inherit">
+      {{'About.Technologies' | translate}}
+    </p>
+    <div id="section-content-2">
+      <img class="push-medium img--small" src="assets/images/angular-logo.svg" title="Angular" alt="angular logo">
+      <img class="push-medium img--small" src="assets/images/ionic-logo.svg" title="Ionic" alt="ionic logo">
+      <img class="push-medium img--small" src="assets/images/node-js-logo.svg" title="Node js" alt="node js logo">
+      <img class="push-medium img--small" src="assets/images/net-core-logo.png" title="ASP Net Core" alt="node js logo">
+    </div>
+  </card-layout>
+
+  <card-layout id="card2">
+    <i id="section-2-title-1">
+      {{'About.Statistics.Title' | translate}}
+    </i>
+    <ul id="section-2-content-1" class="ul--no-style">
+      <li class="color--tertiary font-tertiary v-margin--sm">{{'About.Statistics.Item1' | translate}}
+        >>>
+        <strong>5</strong>
+      </li>
+      <li class="color--tertiary font-tertiary v-margin--xs">{{'About.Statistics.Item2' | translate}}
+        >>>
+        <strong>Rider</strong>
+      </li>
+      <li class="color--tertiary font-tertiary v-margin--sm">{{'About.Statistics.Item3' | translate}}
+        >>>
+        <strong>C#</strong>
+      </li>
+      <li class="color--tertiary font-tertiary v-margin--xs">{{'About.Statistics.Item4' | translate}}
+        >>>
+        <strong>Angular<i class="blink-animation">|</i></strong>
+      </li>
+    </ul>
+  </card-layout>
+
+  <card-layout id="card3">
+    <p id="section-3-title-1" class="p--inherit">
+      {{'About.WhatIDo.Title' | translate}}
+    </p>
+
+    <ul id="section-3-content-1">
+      <li>{{'About.WhatIDo.Item1' | translate}}</li>
+      <li>{{'About.WhatIDo.Item2' | translate}}</li>
+      <li>{{'About.WhatIDo.Item3' | translate}}</li>
+      <li>{{'About.WhatIDo.Item4' | translate}}</li>
+      <li>{{'About.WhatIDo.Item5' | translate}}</li>
+      <li>{{'About.WhatIDo.Item6' | translate}}</li>
+    </ul>
+
+    <p id="section-3-title-2" class="p--inherit">
+      {{'About.WhatICant.Title' | translate}}
+    </p>
+
+    <ul id="section-3-content-2">
+      <li>{{'About.WhatICant.Item1' | translate}}</li>
+      <li>{{'About.WhatICant.Item2' | translate}}</li>
+      <li>{{'About.WhatICant.Item3' | translate}}</li>
+      <li>{{'About.WhatICant.Item4' | translate}}</li>
+    </ul>
   </card-layout>
 </about-layout>

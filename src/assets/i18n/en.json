@@ -14,6 +14,29 @@
   "About": {
     "Description": "I'm a software engineer based in Mexico with 4 years of experience in the software industry. My goal is to develop high quality software using the latest technologies. My passion is to learn what's new in technologies and see how I can include it in my current stack.",
     "Languages": "Programming languages I master",
-    "Technologies": "Other technologies I master"
+    "Technologies": "Frameworks and libraries I master",
+    "Statistics": {
+      "Title": "My Statistics",
+      "Item1": "Completed projects",
+      "Item2": "Most used IDE",
+      "Item3": "Most used programming language",
+      "Item4": "Most used framework"
+    },
+    "WhatIDo": {
+      "Title": "What I do:",
+      "Item1": "Develop your dream app",
+      "Item2": "Create your own website",
+      "Item3": "Create your startup app",
+      "Item4": "Give maintenance to one of your apps",
+      "Item5": "Add new features to your app",
+      "Item6": "Add new features to your website"
+    },
+    "WhatICant": {
+      "Title": "What I CAN'T do",
+      "Item1": "Hack a facebook",
+      "Item2": "Fix your printer",
+      "Item3": "Install windows in your PC",
+      "Item4": "Format your PC"
+    }
   }
 }

@@ -1,13 +1,21 @@
 @import "src/app/ui/styles/colors";
 @import "src/app/ui/styles/layout";
-@import "src/app/ui/styles/spaces";
+@import "../../styles/sizes";
 
 #about {
   background-image: url('../../../../assets/backgrounds/about.svg');
   background-size: cover;
+  padding: $space-large 0;
 
   @include for-size(md) {
     padding: $space-large;
+  }
+
+  .row {
+    grid-row-gap: 0.75rem;
+    @include for-size(md) {
+      grid-template-rows: repeat(2, 1fr);
+    }
   }
 }
 
@@ -86,21 +94,33 @@
 }
 
 .card1,
-.card2 {
+.card2,
+.card3 {
   grid-column: 1/5;
 }
 
-.card1 {
-  margin-bottom: $space-x-small;
-
+.card1,
+.card2 {
   @include for-size(md) {
     grid-column: 1/7;
-    margin-bottom: 0;
+  }
+}
+
+.card1 {
+  @include for-size(md) {
+    grid-row: 1/2;
   }
 }
 
 .card2 {
+  @include for-size(md){
+    grid-row: 2/3;
+  }
+}
+
+.card3 {
   @include for-size(md) {
     grid-column: 7/13;
+    grid-row: 1/3;
   }
 }

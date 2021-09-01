@@ -1,0 +1,63 @@
+$space-miniature: 0.5rem;
+$space-x-small: 1rem;
+$space-small: 2.5rem;
+$space-large: 5rem;
+$space-extra-large: 9rem;
+
+img {
+  &.img--small {
+    width: 2.5rem;
+    height: 2.5rem;
+    object-fit: contain;
+  }
+
+  &.img--medium {
+    width: 5rem;
+    height: 5rem;
+    object-fit: contain;
+  }
+
+  &.img--big {
+    width: 10rem;
+    height: 10rem;
+    object-fit: contain;
+  }
+}
+
+.h-margin {
+  &--xs {
+    margin: 0 $space-miniature;
+  }
+
+  &--sm {
+    margin: 0 $space-x-small;
+  }
+
+  &--md {
+    margin: 0 $space-small;
+  }
+
+  &--lg {
+    margin: 0 $space-large;
+  }
+}
+
+.v-margin {
+  &--xs {
+    margin: $space-miniature 0;
+  }
+
+  &--sm {
+    margin: $space-x-small 0;
+  }
+
+  &--md {
+    margin: $space-small 0;
+  }
+
+  &--lg {
+    margin: $space-large 0;
+  }
+}
+
+
