@@ -1,0 +1,19 @@
+<div class="card">
+  <div class="card_section">
+    <div class="card_section_title">
+      <ng-content select="#section-title-1, #section-2-title-1, #section-3-title-1"></ng-content>
+    </div>
+    <div class="card_section_content">
+      <ng-content select="#section-content-1, #section-2-content-1, #section-3-content-1"></ng-content>
+    </div>
+  </div>
+
+  <div class="card_section">
+    <div class="card_section_title">
+      <ng-content select="#section-title-2, #section-2-title-2, #section-3-title-2"></ng-content>
+    </div>
+    <div class="card_section_content">
+      <ng-content select="#section-content-2, #section-2-content-2, #section-3-content-2"></ng-content>
+    </div>
+  </div>
+</div>

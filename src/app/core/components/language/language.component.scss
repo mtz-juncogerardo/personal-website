@@ -16,13 +16,17 @@
     cursor: pointer;
     color: $color-secondary;
     font-family: $font-tertiary;
-    font-size: $font-size-small;
     text-decoration: none;
+    font-size: $font-size-medium;
     margin: 0 0.33rem;
 
     &:hover,
     &.active {
       color: $color-tertiary;
+    }
+
+    @include for-size(lg) {
+      font-size: $font-size-small;
     }
   }
 }

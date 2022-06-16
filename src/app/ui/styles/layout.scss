@@ -9,15 +9,18 @@ $xl: 1440px;
     @media (max-width: $sm) {
       @content;
     }
-  } @else if $size == md {
+  }
+  @else if $size == md {
     @media (min-width: $md) {
       @content;
     }
-  } @else if $size == lg {
+  }
+  @else if $size == lg {
     @media (min-width: $lg) {
       @content;
     }
-  } @else if $size == xl {
+  }
+  @else if $size == xl {
     @media (min-width: $xl) {
       @content;
     }
@@ -33,12 +36,15 @@ $xl: 1440px;
 
 .grid {
   margin: 0 1rem;
+
   @include for-size(md) {
     margin: 0 2rem;
   }
+
   @include for-size(lg) {
     margin: 0 5rem;
   }
+
   @include for-size(xl) {
     margin: 0 auto;
     max-width: 80rem;
@@ -51,10 +57,12 @@ $xl: 1440px;
   position: relative;
   grid-column-gap: 6.67%;
   grid-template-columns: repeat(4, minmax(0, 1fr));
+
   @include for-size(md) {
     grid-column-gap: 2.27%;
     grid-template-columns: repeat(12, minmax(0, 1fr));
   }
+
   @include for-size(lg) {
     grid-column-gap: 2.19%;
     grid-template-columns: repeat(12, minmax(0, 1fr));
@@ -62,6 +70,14 @@ $xl: 1440px;
 
   &.center {
     place-items: center;
+  }
+}
+
+.subgrid {
+  grid-column: 1/5;
+
+  @include for-size(md) {
+    grid-column: 1/13;
   }
 }
 
@@ -81,15 +97,19 @@ $xl: 1440px;
 
 .test-content {
   background: white;
+
   &-1 {
     background: blue;
   }
+
   &-2 {
     background: yellow;
   }
+
   &-3 {
     background: purple;
   }
+
   &-4 {
     background: coral;
   }

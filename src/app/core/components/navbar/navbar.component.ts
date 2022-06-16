@@ -12,10 +12,12 @@ export class NavbarComponent implements OnInit, OnDestroy   {
 
   menuItems: IkeyValue[];
   langSubscription: Subscription;
+  menuActive: boolean;
 
   constructor(private language: LanguageService) {
     this.menuItems = [];
     this.langSubscription = new Subscription();
+    this.menuActive = false;
   }
 
   get spanishMenuItems(): IkeyValue[] {
@@ -68,5 +70,20 @@ export class NavbarComponent implements OnInit, OnDestroy   {
 
   ngOnDestroy(): void {
     this.langSubscription.unsubscribe();
+  }
+
+  toggleMenu() {
+    this.menuActive = !this.menuActive;
+    const hamburgerMenu = document.querySelector('.menu-animation');
+    const hamburgerMenuItem = document.querySelector('.hamburger-menu__list') as HTMLElement;
+    if (this.menuActive) {
+      setTimeout(() => hamburgerMenuItem.style.display = 'flex', 500);
+      hamburgerMenu?.classList.remove('menu-animation--close');
+      hamburgerMenu?.classList.add('menu-animation--open');
+      return;
+    }
+    hamburgerMenuItem.style.display = 'none';
+    hamburgerMenu?.classList.remove('menu-animation--open');
+    hamburgerMenu?.classList.add('menu-animation--close');
   }
 }

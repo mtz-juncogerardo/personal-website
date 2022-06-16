@@ -1,0 +1,32 @@
+@import "../../styles/colors";
+@import "../../styles/sizes";
+@import "../../styles/typography";
+@import "../../styles/layout";
+
+.card {
+  @include flex(column, space-around, start);
+  height: 100%;
+  background: rgba(255, 255, 255, 0.02);
+  padding: $space-x-small $space-small;
+  border-radius: 0.5rem;
+  backdrop-filter: blur(10px);
+  border: 2px solid rgba(255, 255, 255, 0.2);
+  color: rgba($color-shadow, 0.7);
+
+  &_section {
+    margin-bottom: 0.5rem;
+    &:last-child {
+      margin-bottom: 0;
+    }
+
+    &_title {
+      color: $color-primary;
+      font-family: $font-tertiary;
+      font-size: $font-size-small;
+
+      @include for-size(md) {
+        font-size: $font-size-medium;
+      }
+    }
+  }
+}

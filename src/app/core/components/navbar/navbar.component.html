@@ -16,5 +16,26 @@
       </div>
     </div>
   </div>
+
+  <div class="hamburger-menu" (click)="toggleMenu()">
+    <div class="hamburger-menu_icon">
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+  </div>
+
+  <div class="menu-animation">
+    <ul class="hamburger-menu__list">
+      <li *ngFor="let menuItem of menuItems" class="hamburger-menu__list__item">
+        <a [href]="menuItem.key">
+          {{menuItem.value}}
+        </a>
+      </li>
+      <div class="hamburger-menu__list_language">
+        <ng-content select="#hamburger-language"></ng-content>
+      </div>
+    </ul>
+  </div>
 </nav>
 

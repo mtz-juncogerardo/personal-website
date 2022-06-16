@@ -18,10 +18,10 @@ nav {
   }
 
   .menu {
-    grid-column: 3/5;
-    @include flex(row, space-between, center);
-    @include for-size(md) {
+    display: none;
+    @include for-size(lg) {
       grid-column: 6/13;
+      @include flex(row, space-between, center);
     }
 
     &_list {
@@ -51,6 +51,51 @@ nav {
     &_language {
       grid-column: 11/13;
       @include flex(row, center, center);
+    }
+  }
+
+  .hamburger-menu {
+    cursor: pointer;
+    grid-column: 13/13;
+    @include for-size(lg) {
+      display: none;
+    }
+
+    &__list {
+      @include flex(column, space-around, center);
+      height: 100%;
+      padding: 0;
+      margin: 0;
+
+      &__item {
+        a {
+          font-family: $font-tertiary;
+          color: $color-tertiary;
+          font-size: 2rem;
+        }
+      }
+    }
+
+    &_icon {
+      height: 100%;
+      @include flex(column, center, center);
+
+      @include for-size(lg) {
+        display: none;
+      }
+
+      span {
+        display: block;
+        width: 2.8rem;
+        height: 0.38rem;
+        background: $color-secondary;
+        border-radius: 0.5rem;
+        margin-bottom: 0.25rem;
+
+        &:last-child {
+          margin-bottom: 0;
+        }
+      }
     }
   }
 }

@@ -8,6 +8,7 @@ import {ComponentsModule} from "../../../core/components/components.module";
 import {DirectivesModule} from "../../../core/directives/directives.module";
 import {TranslateModule} from "@ngx-translate/core";
 import {RouterModule, Routes} from "@angular/router";
+import { ProjectsComponent } from './projects/projects.component';
 
 const routes : Routes = [
   {
@@ -20,7 +21,8 @@ const routes : Routes = [
   declarations: [
     HomePage,
     AboutComponent,
-    HeroComponent
+    HeroComponent,
+    ProjectsComponent
   ],
   imports: [
     CommonModule,

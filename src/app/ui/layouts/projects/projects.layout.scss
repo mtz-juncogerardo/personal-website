@@ -1,0 +1,58 @@
+@import "../../styles/colors";
+@import "../../styles/sizes";
+@import "../../styles/typography";
+@import "../../styles/layout";
+
+#projects {
+  height: 100vh;
+  padding: 5rem 0;
+
+  @include for-size(md) {
+    padding: 5rem;
+  }
+}
+
+h1 {
+  grid-column: 1/5;
+  margin: 2rem 0;
+
+  @include for-size(md) {
+    grid-column: 1/13;
+  }
+}
+
+.card {
+  height: 27rem;
+  grid-column: 1/5;
+  margin-bottom: 1rem;
+
+  &_1 {
+    @include for-size(lg) {
+      grid-column: 1/9;
+    }
+
+    @include for-size(md) {
+      grid-column: 1/7;
+    }
+  }
+
+  &_2 {
+    @include for-size(lg) {
+      grid-column: 5/9;
+    }
+
+    @include for-size(md) {
+      grid-column: 7/13;
+    }
+  }
+
+  &_3 {
+    @include for-size(lg) {
+      grid-column: 9/13;
+    }
+
+    @include for-size(md) {
+      grid-column: 2/12;
+    }
+  }
+}
